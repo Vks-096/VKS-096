@@ -1,0 +1,99 @@
+body  {
+    font-family:  Arial,  sans-serif;  /* 设置字体 */
+    background-color:  #f3f3f3;  /* 设置背景颜色 */
+    margin:  0;  /* 设置外边距为0 */
+    padding:  0;  /* 设置内边距为0 */
+}
+header  {
+    background-color:  #333;  /* 设置背景颜色 */
+    color:  #fff;  /* 设置文本颜色 */
+    text-align:  center;  /* 文本居中显示 */
+    padding:  10px  0;  /* 上下内边距为10像素，左右内边距为0 */
+}
+nav  {
+    background-color:  #444;  /* 设置背景颜色 */
+    color:  #fff;  /* 设置文本颜色 */
+    text-align:  center;  /* 文本居中显示 */
+    padding:  10px  0;  /* 上下内边距为10像素，左右内边距为0 */
+}
+.navbar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+section  {
+    padding:  20px;  /* 设置内边距为20像素 */
+}
+footer  {
+    background-color:  #333;  /* 设置背景颜色 */
+    color:  #fff;  /* 设置文本颜色 */
+    text-align:  center;  /* 文本居中显示 */
+    padding:  10px  0;  /* 上下内边距为10像素，左右内边距为0 */
+    position:  absolute;  /* 设置为绝对定位 */
+    bottom:  0;  /* 设置距离底部为0 */
+    width:  100%;  /* 宽度为100% */
+}
+.container  {
+    width:  80%;  /* 宽度为父元素80% */
+    margin:  auto;  /* 居中显示 */
+}
+.product  {
+    border:  1px  solid  #ccc;  /* 设置边框 */
+    padding:  10px;  /* 设置内边距为10像素 */
+    margin:  10px;  /* 设置外边距为10像素 */
+    text-align:  center;  /* 文本居中显示 */
+    background-color:  #fff;  /* 设置背景颜色 */
+    border-radius:  5px;  /* 设置边框圆角为5像素 */
+    display:  inline-block;  /* 行内块元素显示 */
+    width:  30%;  /* 宽度为父元素30% */
+}
+.product  img  {
+    margin-bottom:  10px;  /* 底部外边距为10像素 */
+}
+/* 设置图片的像素大小 */
+.img-pixel {
+    width: 200px;
+    height: 300px;
+}
+
+/* 设置图片的百分比大小 */
+.img-percentage {
+    width: 50%;
+    height: 50%;
+}
+.img-max {
+    /* 设置图片的最大宽度为100% */
+    max-width: 100%;
+    /* 设置图片的最大高度为100% */
+    max-height: 100%;
+}
+
+.img-fit {
+    /* 设置图片的宽度为200px */
+    width: 200px;
+    /* 设置图片的高度为300px */
+    height: 300px;
+    /* 设置图片的填充方式为cover，即保持图片的纵横比，同时填充整个容器 */
+    object-fit: cover;
+}
+.button {
+    /* 设置按钮的显示方式为行内块 */
+    display: inline-block;
+    /* 设置按钮的内边距为10px 20px */
+    padding: 10px 20px;
+    /* 设置按钮的背景颜色为#007BFF */
+    background-color: #007BFF;
+    /* 设置按钮的文字颜色为白色 */
+    color: white;
+    /* 设置按钮的文字居中对齐 */
+    text-align: center;
+    /* 设置按钮的文字无下划线 */
+    text-decoration: none;
+    /* 设置按钮的边框半径为5px */
+    border-radius: 5px;
+}
+ .button:hover {
+     /* 设置鼠标悬停在按钮上时的背景颜色为#0056b3 */
+     background-color: #0056b3;
+ }

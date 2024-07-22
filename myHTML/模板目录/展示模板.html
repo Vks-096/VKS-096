@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Folder Contents in HTML</title>
+</head>
+<body>
+    <div id="images"></div>
+
+    <script>
+        // 定义文件夹路径
+        let folderPath = '../static/competition_img';
+
+        // 获取文件夹里的所有文件
+        fetch(folderPath)
+            .then(response => response.text())
+            .then(data => {
+                // 解析文件夹内容
+                let parser = new DOMParser();
+                let doc = parser.parseFromString(data, 'text/html');
+                let links = doc.getElementsByTagName('a');
+
+                // 创建图片元素并添加到页面
+                let imagesDiv = document.getElementById('images');
+                for (let i = 0; i < links.length; i++) {
+                    let link = links[i];
+                    let href = link.getAttribute('href');
+                    if (href.endsWith('.jpg') || href.endsWith('.png')) {
+                        let img = document.createElement('img');
+                        img.src = folderPath + href;
+                        imagesDiv.appendChild(img);
+                    }
+                }
+            });
+    </script>
+</body>
+</html>
